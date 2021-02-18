@@ -64,5 +64,41 @@ body {
                 z-index: 2;
             }
         }
+
+        .content {
+            position: relative;
+
+            &__body {
+                max-width: 1770px;
+                margin: 0 auto;
+
+            }
+
+            &__header {
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                padding: 0px 20px;
+            }
+
+            &__title {
+                font-size: 150px;
+            }
+
+            &__subtitle {
+                font-size: 120px;
+            }
+
+            &__description {
+                background-color: rgba(255, 255, 255, 0.5);
+                padding: 25px;
+                font-size: 18px;
+                line-height: 24px;
+
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
     }
 }
