@@ -35,7 +35,7 @@ function images() {
             })
         ]
         ))
-        .pipe(dest('dist/assets/images'))
+        .pipe(dest('dist/assets/'))
 }
 
 function scripts() {
