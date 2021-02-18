@@ -1,0 +1,68 @@
+// Обнуляющие стили
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+// --------------------
+
+// Основные стили
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+    .main {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        .parallax {
+            position: relative;
+            height: 100%;
+
+            &__mountain {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+
+                &-1 {
+                    background: url('../assets/m_1.png') center center/ cover no-repeat;
+                }
+
+                &-2 {
+                    z-index: 1;
+                    background: url('../assets/m_2.png') bottom right/ 45% no-repeat;
+                }
+
+                &-3 {
+                    z-index: 1;
+                    background: url('../assets/m_3.png')bottom left/ 100% no-repeat;
+                }
+            }
+
+            &__fog {
+                background: url('../assets/fog_1.png') bottom/ 100% no-repeat;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+        }
+    }
+}
